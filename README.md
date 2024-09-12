@@ -22,3 +22,10 @@ Create a `.env` file in the root directory of your project with the following co
 MONGO_URI='mongodb+srv://<your-mongo-uri>'
 YOUTUBE_API_URL='https://www.googleapis.com/youtube/v3/search/'
 GOOGLE_API_KEY='<your-google-api-key>'
+
+**Step 2: Install Dependencies**: Updated to use `npm install` or `yarn install` for installing Node.js libraries
+
+**Step 3: Start the Project**: Changed to use `npm start` or `yarn start` to start the project
+
+
+
