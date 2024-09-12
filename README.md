@@ -1,38 +1,47 @@
-# Backend Assignment
+# Backend Assignment 
 
-## Project Goal
+# Project Goal
+ To make an API to fetch latest videos sorted in reverse chronological order of their publishing date-time from YouTube for a given tag/search query in a paginated response.
+# Basic Requirements:
+-Server should call the YouTube API continuously in background (async) with some interval (say 10 seconds) for fetching the latest videos for a predefined search query and should store the data of vid eos (specifically these fields - Video title, description, publishing datetime, thumbnails URLs and any other fields you require) in a database with proper indexes.
 
-To make an API to fetch latest videos sorted in reverse chronological order of their publishing date-time from YouTube for a given tag/search query in a paginated response.
+-A GET API which returns the stored video data in a paginated response sorted in descending order of published datetime.
 
-## Basic Requirements
+-It should be scalable and optimised.
 
-- Server should call the YouTube API continuously in background (async) with some interval (say 10 seconds) for fetching the latest videos for a predefined search query and should store the data of videos (specifically these fields - Video title, description, publishing datetime, thumbnails URLs and any other fields you require) in a database with proper indexes.
+# To Run the project:
+ 
+## step 1 :  
+create `.env` file containg <br>
+```  SECRET_KEY=''
+  MONGO_URI='mongodb+srv://'
+  YOUTUBE_API_URL='https://www.googleapis.com/youtube/v3/search/'
+  GOOGLE_API_KEY=''
+```    
+  
+  
+## step 2 : 
+  Download required libraries by `npm install `<br>
+  
+## step 3 : 
+  Start project use npm start or yarn start`
 
-- A GET API which returns the stored video data in a paginated response sorted in descending order of published datetime.
+# References
 
-- A basic search API to search the stored videos using their title and description
+## Quering(Paginated) -
+![page 1](https://github.com/user-attachments/assets/285a15ed-04e2-4880-bbce-dc504c6d6f20)
+![page 2](https://github.com/user-attachments/assets/b49649a8-5d71-4929-9859-9c33507c0069)
+![page 3](https://github.com/user-attachments/assets/ecd7b88c-25eb-4ad1-b4d3-43ca5f1cd47c)
+![page 4](https://github.com/user-attachments/assets/f8d51d80-ac20-4901-b80b-6cd5ca6c1ceb)
 
-## Getting Started
+## Searching -
+![searching](https://github.com/user-attachments/assets/ed3f9b81-11b9-4bed-9544-7409813a30dd)
+![searching 2](https://github.com/user-attachments/assets/e2144d91-0866-4959-b98f-da0e429a9de5)
 
-### Step 1: Configure Environment
 
-Create a `.env` file in the root directory of your project with the following content:
-
-```env
-MONGO_URI='mongodb+srv://<your-mongo-uri>'
-YOUTUBE_API_URL='https://www.googleapis.com/youtube/v3/search/'
-GOOGLE_API_KEY='<your-google-api-key>'
-
-**Step 2: Install Dependencies**: Updated to use `npm install` or `yarn install` for installing Node.js libraries
-
-**Step 3: Start the Project**: Changed to use `npm start` or `yarn start` to start the project
-
-# Reference
-
-## Querying (Paginated)
-
-![Page 2](https://github.com/user-attachments/assets/0959ee13-05e3-4b2a-8f06-b922e19521ec)
-
+## Fetching Videos -
+![latest data ](https://github.com/user-attachments/assets/8d84c42c-9b5a-400e-8bd1-41a06b7a3764)
+![datasaved](https://github.com/user-attachments/assets/34d81c71-9ba7-4e85-a460-8fa8829dab07)
 
 
 
