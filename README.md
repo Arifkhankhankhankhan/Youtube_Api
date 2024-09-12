@@ -27,5 +27,12 @@ GOOGLE_API_KEY='<your-google-api-key>'
 
 **Step 3: Start the Project**: Changed to use `npm start` or `yarn start` to start the project
 
+# Reference
+
+## Querying (Paginated)
+
+![Page 2](https://github.com/user-attachments/assets/0959ee13-05e3-4b2a-8f06-b922e19521ec)
+
+
 
 
